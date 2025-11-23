@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function EducatorDashboard() {
@@ -38,7 +38,7 @@ export default function EducatorDashboard() {
   return (
     <div className="w-full space-y-8">
       {/* HEADER */}
-      <header className="w-full bg-gradient-to-br from-indigo-600 to-indigo-800 text-white rounded-xl p-6 shadow-md">
+      <header className="w-full bg-linear-to-br from-indigo-600 to-indigo-800 text-white rounded-xl p-6 shadow-md">
         <h1 className="text-3xl font-semibold">Welcome, Educator</h1>
         <p className="text-indigo-200 mt-1">
           Here is your teaching schedule and tasks.

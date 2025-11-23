@@ -29,7 +29,7 @@ export default function AdminDashboard() {
     },
   ]);
 
-  const [students, setStudents] = useState<Student[]>([
+  const [students] = useState<Student[]>([
     { id: "s1", name: "Ana Maria" },
     { id: "s2", name: "Bogdan" },
     { id: "s3", name: "Cristi" },
@@ -49,7 +49,7 @@ export default function AdminDashboard() {
   });
 
   // UI state
-  const [selectedCourseId, setSelectedCourseId] = useState<string | null>(
+  const [selectedCourseId] = useState<string | null>(
     courses[0].id
   );
   const [showCreateCourse, setShowCreateCourse] = useState(false);

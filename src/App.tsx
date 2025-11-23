@@ -6,11 +6,10 @@ import {
 } from "react-router-dom";
 
 import StudentDashboard from "./pages/StudentDashboard";
-import EducatorDashboard  from "./pages/EducatorDashboard";
-import AdminDashboard  from "./pages/AdminDashboard";
-// import { GradebookPage } from "./pages/GradebookPage";
+import EducatorDashboard from "./pages/EducatorDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
+import GradebookPage from "./pages/GradebookPage";
 // import { FinancialsPage } from "./pages/FinancialsPage";
-
 
 export default function App() {
   return (
@@ -23,8 +22,8 @@ export default function App() {
             <Route path="/student" element={<StudentDashboard />} />
             <Route path="/educator" element={<EducatorDashboard />} />
             <Route path="/admin" element={<AdminDashboard />} />
-            {/* <Route path="/gradebook" element={<GradebookPage />} />
-            <Route path="/financials" element={<FinancialsPage />} /> */}
+            <Route path="/gradebook" element={<GradebookPage />} />
+            {/* <Route path="/financials" element={<FinancialsPage />} /> */}
           </Routes>
         </main>
       </div>
