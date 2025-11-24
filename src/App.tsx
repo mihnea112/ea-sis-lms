@@ -9,7 +9,7 @@ import StudentDashboard from "./pages/StudentDashboard";
 import EducatorDashboard from "./pages/EducatorDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import GradebookPage from "./pages/GradebookPage";
-// import { FinancialsPage } from "./pages/FinancialsPage";
+import CoursePage from "./pages/CoursePage";
 
 export default function App() {
   return (
@@ -23,7 +23,7 @@ export default function App() {
             <Route path="/educator" element={<EducatorDashboard />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/gradebook" element={<GradebookPage />} />
-            {/* <Route path="/financials" element={<FinancialsPage />} /> */}
+            <Route path="/course/:courseId" element={<CoursePage />} />
           </Routes>
         </main>
       </div>
@@ -58,9 +58,6 @@ function Navbar() {
           </NavLink>
           <NavLink to="/gradebook" className={linkClasses}>
             Gradebook
-          </NavLink>
-          <NavLink to="/financials" className={linkClasses}>
-            Financials
           </NavLink>
         </div>
       </div>
